@@ -38,7 +38,7 @@ function calulaEx8(){
             resultado.totalVeiculos += dadosEstado.nmrVeiculos;
             estado.push(dadosEstado);
         }
-        final = final + "Maior Indice de acidentes" + resultado.maiorIndice + "\nMenor Indice de acidentes" + resultado.menorIndice
+        final = final + "Maior Indice de acidentes: " + resultado.maiorIndice + "\nMenor Indice de acidentes: " + resultado.menorIndice
             + "\nMédia de acidentes entre os estados: " + (resultado.mediaAcidentes / resultado.totalVeiculos)
             + "\nPercentual de veiculos em casa estado: \n"
         for(var i = 0; i < estado.length; i++){
