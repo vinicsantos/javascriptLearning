@@ -39,10 +39,10 @@ function calulaEx8(){
             estado.push(dadosEstado);
         }
         final = final + "Maior Indice de acidentes: " + resultado.maiorIndice + "\nMenor Indice de acidentes: " + resultado.menorIndice
-            + "\nMédia de acidentes entre os estados: " + (resultado.mediaAcidentes / resultado.totalVeiculos)
+            + "\nMédia de acidentes dos estados: " + (resultado.mediaAcidentes / resultado.totalVeiculos)
             + "\nPercentual de veiculos em casa estado: \n"
         for(var i = 0; i < estado.length; i++){
-            estado[i].percentual = (resultado.totalVeiculos / estado[i].nmrVeiculos);
+            estado[i].percentual = (resultado.totalVeiculos / 100) * estado[i].nmrVeiculos;
             final = final + "Estado: " +  estado[i].nomeEstado + "\nPercentual: " + estado[i].percentual + "\n"
         }
         alert(final);
